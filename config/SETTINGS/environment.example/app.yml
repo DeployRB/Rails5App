@@ -11,3 +11,14 @@ redis:
 
 sidekiq:
   namespace: 'example.com'
+
+action_cable:
+  adapter_params:
+    # adapter: async
+    adapter: redis
+    url: redis://localhost:6010/1
+
+  worker_pool_size: 4
+  mount_path: 'ws://localhost:3000/app-cable'
+  disable_request_forgery_protection: false
+  allowed_request_origins: http://localhost:3000
