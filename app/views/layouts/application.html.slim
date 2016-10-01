@@ -1,0 +1,14 @@
+doctype html
+
+html.w100p.h100p
+  head
+    title Rails5App
+    = csrf_meta_tags
+
+    = stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload'
+    = javascript_include_tag 'application', 'data-turbolinks-track': 'reload'
+
+  body.w100p.h100p.ffa
+    .w80p.ma
+      .mt20.mb20
+        = yield
