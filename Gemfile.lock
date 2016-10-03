@@ -1,4 +1,13 @@
 GIT
+  remote: https://github.com/amatsuda/kaminari.git
+  revision: cbcfe341aad1f56ac3e34380365414381bf7e606
+  branch: cbcfe341
+  specs:
+    kaminari (1.0.0.alpha)
+      actionpack (>= 3.0.0)
+      activesupport (>= 3.0.0)
+
+GIT
   remote: https://github.com/the-teacher/protozaur.git
   revision: a39e67a7b0cf185b7446d084137330cd90114c7c
   branch: v2.0.pre
@@ -254,6 +263,7 @@ DEPENDENCIES
   foreman
   jbuilder (~> 2.5)
   jquery-rails
+  kaminari!
   listen (~> 3.0.5)
   omniauth (= 1.3.1)
   omniauth-facebook (= 4.0.0)
