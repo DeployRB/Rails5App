@@ -4,6 +4,8 @@
 # or operating system, you probably want to add a global ignore instead:
 #   git config --global core.excludesfile '~/.gitignore_global'
 
+.DS_Store
+
 # Ignore bundler config.
 /.bundle
 
@@ -22,3 +24,11 @@
 
 # Ignore Byebug command history file.
 .byebug_history
+
+config/SETTINGS/development/*
+config/SETTINGS/production/*
+config/SETTINGS/test/*
+
+config/SERVICES/development/*
+config/SERVICES/production/*
+config/SERVICES/test/*
