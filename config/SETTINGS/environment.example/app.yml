@@ -1,0 +1,6 @@
+app:
+  default_locale: <%= ENV['DEFAULT_LOCALE'] || 'en' %>
+  time_zone: 'St. Petersburg'
+
+  secret_key_base: 'fc1c1017321f04335841322ca5a25c3f53d1c04ff3a269aa993786bf08e4bfffc9d6d32985fab95c60f361c38b0ac6527596f8ed2333f7b95d109211ba2e28b4'
+  secret_token:    'a64d25c1e037a18c40ccaa867b93ac278869efa3e74038d1bce1c614aa00d80d8b734738a83e764ba01bd506aa527b05c5195babe814ea9798575a2f73a6e7b9'
