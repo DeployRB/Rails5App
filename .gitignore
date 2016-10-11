@@ -38,3 +38,7 @@ config/_SIDEKIQ_CONFIG.yml
 
 db/REDIS/*
 log/sidekiq.log
+
+config/_THINKING_SPHINX.yml
+config/SPHINX.conf
+db/SPHINX/*
