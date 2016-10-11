@@ -33,6 +33,8 @@ config/SERVICES/development/*
 config/SERVICES/production/*
 config/SERVICES/test/*
 
+config/_SCHEDULE.rb
+
 config/_REDIS_CONFIG.conf
 config/_SIDEKIQ_CONFIG.yml
 
