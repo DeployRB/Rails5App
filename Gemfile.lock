@@ -1,5 +1,5 @@
 GIT
-  remote: https://github.com/amatsuda/kaminari.git
+  remote: git://github.com/amatsuda/kaminari.git
   revision: cbcfe341aad1f56ac3e34380365414381bf7e606
   branch: cbcfe341
   specs:
@@ -8,7 +8,7 @@ GIT
       activesupport (>= 3.0.0)
 
 GIT
-  remote: https://github.com/the-teacher/protozaur.git
+  remote: git://github.com/the-teacher/protozaur.git
   revision: 3d65120c1ab16b0014e2bd379bf7dfa3ebca4343
   specs:
     protozaur (1.1.0)

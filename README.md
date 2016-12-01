@@ -114,13 +114,13 @@ ALTER ROLE "USER.NAME" SUPERUSER CREATEDB;
 ### 5. Initialize your App
 
 ```
-rake app:init
+bundle exec rake app:init
 ```
 
 ### 6. Build Search index
 
 ```
-rake ts:configure && rake ts:index
+bundle exec rake ts:configure && bundle exec rake ts:index
 ```
 
 ### 7. Start services
@@ -144,7 +144,7 @@ whenever --update-crontab \
 Start services with `foreman`
 
 ```
-foreman start
+bundle exec foreman start
 ```
 
 ### 8. Start Rails server
