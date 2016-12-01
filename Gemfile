@@ -26,7 +26,9 @@ gem 'sinatra', '1.0', require: nil
 gem 'whenever', '0.9.7', require: false
 
 # CONTENT
-gem 'protozaur', github: 'the-teacher/protozaur'
+# gem 'protozaur', github: 'the-teacher/protozaur'
+gem 'protozaur', path: '../protozaur'
+
 gem 'slim-rails', '3.1.1'
 gem 'slim', '3.0.7'
 gem 'ffaker'

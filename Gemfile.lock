@@ -7,9 +7,8 @@ GIT
       actionpack (>= 3.0.0)
       activesupport (>= 3.0.0)
 
-GIT
-  remote: git://github.com/the-teacher/protozaur.git
-  revision: 3d65120c1ab16b0014e2bd379bf7dfa3ebca4343
+PATH
+  remote: ../protozaur
   specs:
     protozaur (1.1.0)
 
