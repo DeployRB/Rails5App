@@ -1,4 +1,38 @@
-.clearfix
+.fs30.mb70 Protozaur CSS Framework
+
+.clearfix.mb50
+  .pull-left.mr30
+    .fs25.mb20 Font Family
+
+    .mb40
+      - %w[ ffa fft ffv ffg ffm fftnr ].each do |font_family|
+        div.lh120.fs16(class=font_family) <b>#{font_family}</b> &mdash; All work and no play makes Jack a dull boy!
+
+    .clearfix
+      .fs25.mb20 Block Model
+
+      .fs16.mt50.mb30
+        div.showme.inline.p15 Inline
+        div.showme.inline.p15 Inline
+        div.showme.inline.p15 Inline
+
+      .fs16.mb20
+        div.showme.iblock.p15 Inline Block
+        div.showme.iblock.p15 Inline Block
+        div.showme.iblock.p15 Inline Block
+
+      .fs16.mb20
+        span.showme.block.p15 Block
+        span.showme.block.p15 Block
+        span.showme.block.p15 Block
+
+  .pull-left.mr30
+    .fs25.mb20 Line Height
+
+    - (10..20).to_a.each do |num|
+      - size = num * 10
+      div.fs16(class="lh#{ size }") Text line has class `lh#{ size }`
+
   .pull-left.mr30
     .fs25.mb20 Font Size
 
@@ -6,9 +40,104 @@
       - size = num
       div.lh120(class="fs#{ size }") Text line has class `fs#{ size }`
 
-  .pull-left
-    .fs25.mb20 Line Height
+.clearfix.mb50
+  .pull-left.mr30
+    .fs25.mb20 Buttons
 
-    - (10..20).to_a.each do |num|
-      - size = num * 10
-      div.fs15(class="lh#{ size }") Text line has class `lh#{ size }`
+    - (10..19).step(1) do |num|
+      .mb20
+        = link_to "Link As Button | #{ num }", '#', class: "ptz_btn ptz_size-#{num}"
+
+  .pull-left.mr30
+    .fs25.mb20 &nbsp;
+
+    - (20..25).step(1) do |num|
+      .mb20
+        = link_to "Link As Button | #{ num }", '#', class: "ptz_btn ptz_size-#{num} current"
+
+  .pull-left.mr30
+    .fs25.mb20 &nbsp;
+
+    - (20..25).step(1) do |num|
+      .mb20
+        = link_to "Link As Button | #{ num }", '#', class: "ptz_btn ptz_size-#{num}", disabled: :disabled
+
+.clearfix.mb50
+  .pull-left.mr30
+    .fs25.mb20 Inputs
+
+    - (10..20).step(2).each do |num|
+      - size = num
+      .mb20
+        = text_field_tag :name, "This is input with size: #{ num }", class: "ptz_input ptz_size-#{ num }"
+
+  .pull-left.mr30
+    .fs25.mb20 Textarea
+
+    - (10..20).step(2).each do |num|
+      - size = num
+      .mb20.ffa
+        = text_area_tag :name, "This is input with size: #{ num }", class: "ptz_textarea ptz_size-#{ num } ffa"
+
+  .pull-left.mr30
+    .fs25.mb20 Buttons
+
+    .mb20
+      .mb20= button_tag "Button | Current", class: "ptz_btn ptz_size-20 current"
+      .mb20= button_tag "Button | Regular", class: "ptz_btn ptz_size-20"
+      .mb20= button_tag "Button | Disabled", class: "ptz_btn ptz_size-20", disabled: :disabled
+      .mb20
+        = button_tag "Button 1", class: "ptz_btn ptz_size-20 ptz_btn-side_left"
+        = button_tag "Button 2", class: "ptz_btn ptz_size-20 ptz_btn-side_right"
+      .mb20
+        .ptz_btn-group
+          = button_tag "Button 1", class: "ptz_btn ptz_size-20"
+          = button_tag "Button 2", class: "ptz_btn ptz_size-20 current"
+          = button_tag "Button 3", class: "ptz_btn ptz_size-20", disabled: :disabled
+
+.clearfix.mb50
+  .pull-left.mr30
+    .fs25.mb20 Paddings (0 &mdash; 100)
+
+    - (5..40).step(5) do |num|
+      div.showme.fs16(class="p#{ num }") Padding: #{num}
+
+  .pull-left.mr30
+    .fs25.mb20
+      | p<b>X</b>, pt<b>X</b>, pl<b>X</b>, pr<b>X</b>, , pb<b>X</b>,
+
+    - (40..60).step(5) do |num|
+      div.showme.fs16(class="p#{ num }") Padding: #{num}
+
+  .pull-left.mr30
+    .fs25.mb20 &nbsp;
+
+    - (60..75).step(5) do |num|
+      div.showme.fs16(class="p#{ num }") Padding: #{num}
+
+  .pull-left.mr30
+    .fs25.mb20 &nbsp;
+
+    - (75..90).step(5) do |num|
+      div.showme.fs16(class="p#{ num }") Padding: #{num}
+
+.clearfix.mb50
+  .fs25.mb20
+    span.mr30 Margins (0 &mdash; 100)
+    span m<b>X</b>, mt<b>X</b>, ml<b>X</b>, mr<b>X</b>, , mb<b>X</b>,
+
+  .pull-left.mr30.showme
+
+    - (5..40).step(5) do |num|
+      div.showme.fs16.p10(class="m#{ num }") Margin: #{num}
+
+  .pull-left.mr30.showme
+    - (40..60).step(5) do |num|
+      div.showme.fs16.p10(class="m#{ num }") Margin: #{num}
+
+  .pull-left.mr30.showme
+    .fs25.mb20 &nbsp;
+
+    - (60..75).step(5) do |num|
+      div.showme.fs16.p10(class="m#{ num }") Margin: #{num}
+

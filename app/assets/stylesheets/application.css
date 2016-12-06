@@ -3,8 +3,7 @@
   *= require ptz/base
   *= require ptz/framework
 
-  #= require ptz/inputs-buttons/base
-  #= require ptz/inputs-buttons/sizes
+  #= require ptz/inputs_buttons/all
 
   *= require layout
   *= require notes
