@@ -1,0 +1,6 @@
+.fs25.mb20 Textarea
+
+- (10..20).step(2).each do |num|
+  - size = num
+  .mb20.ffa
+    = text_area_tag :name, "This is input with size: #{ num }", class: "ptz_textarea ptz_size-#{ num } ffa"

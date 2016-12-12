@@ -1,0 +1,99 @@
+.fs25.mb20 Table:
+
+.lh130.fs18
+  .mb50
+    xmp.showme.p10.mb20
+      erb:
+        .ptz_table
+          .ptz_tr
+            .ptz_td Hello World
+            .ptz_td Hello World
+
+    xmp.showme.p10.mb20
+      erb:
+        <div class="ptz_table">
+          <div class="ptz_tr">
+            <div class="ptz_td">Hello World</div>
+            <div class="ptz_td">Hello World</div>
+          </div>
+        </div>
+
+    .p10
+      .ptz_table
+        .ptz_tr
+          .ptz_td.p10.showme Hello World
+          .ptz_td.p10.showme Hello World
+
+  .mb50
+    xmp.showme.p10.mb20
+      erb:
+        .ptz_table.w100p
+          .ptz_tr
+            .ptz_td.w50p Hello World
+            .ptz_td Hello World
+
+    .p10
+      .ptz_table.w100p
+        .ptz_tr
+          .ptz_td.w50p.p10.showme Hello World
+          .ptz_td.p10.showme Hello World
+
+  .mb50
+    xmp.showme.p10.mb20
+      erb:
+        .ptz_table.w100p
+          .ptz_tr
+            .ptz_td.w50p
+              | Hello World <br> Hello World <br> Hello World
+            .ptz_td
+              | Hello World
+
+    .p10
+      .ptz_table.w100p
+        .ptz_tr
+          .ptz_td.w50p.p10.showme
+            | Hello World <br> Hello World <br> Hello World
+          .ptz_td.p10.showme
+            | Hello World
+
+  .mb20
+    .mb5 <b>.vam</b> &mdash; Vertical Align Middle
+    .mb5 <b>.tac</b> &mdash; Text Align Center
+
+  .mb50
+    xmp.showme.p10.mb20
+      erb:
+        .ptz_table.w100p
+          .ptz_tr
+            .ptz_td.w50p
+              | Hello World <br> Hello World <br> Hello World
+            .ptz_td.vam.tac
+              | Hello World
+
+    .p10
+      .ptz_table.w100p
+        .ptz_tr
+          .ptz_td.w50p.p10.showme
+            | Hello World <br> Hello World <br> Hello World
+          .ptz_td.vam.tac.p10.showme
+            | Hello World
+
+  .mb20
+    .mb5 <b>.vab</b> &mdash; Vertical Align Bottom
+    .mb5 <b>.tar</b> &mdash; Text Align Right
+
+  .mb50
+    xmp.showme.p10.mb20
+      erb:
+        .ptz_table.w100p
+          .ptz_tr
+            .ptz_td.w50p
+              | Hello World <br> Hello World <br> Hello World
+            .ptz_td.vab.tar
+              | Hello World
+
+    .p10
+      .ptz_table.w100p
+        .ptz_tr
+          .ptz_td.w50p.p10.showme Hello World <br> Hello World <br> Hello World
+          .ptz_td.vab.tar.p10.showme Hello World

@@ -1,0 +1,8 @@
+.mb20 Width %:
+- (10..100).step(10) do |num|
+  .mb20
+    = text_field_tag :name, "Width #{num}%. Class: w#{ num }p", class: "ptz_input ptz_size-14 w#{ num }p"
+.mb20 Width px:
+- (100..1000).step(50) do |num|
+  .mb20
+    = text_field_tag :name, "Width #{num}%. Class: w#{ num }", class: "ptz_input ptz_size-14 w#{ num }"

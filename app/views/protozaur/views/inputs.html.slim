@@ -1,0 +1,6 @@
+.fs25.mb20 Inputs
+
+- (10..20).step(2).each do |num|
+  - size = num
+  .mb20
+    = text_field_tag :name, "This is input with size: #{ num }", class: "ptz_input ptz_size-#{ num }"

@@ -1,0 +1,38 @@
+.fs25.mb20 Buttons
+
+.mb20
+  .mb20= button_tag "Button | Current", class: "ptz_btn ptz_size-20 current"
+  .mb20= button_tag "Button | Regular", class: "ptz_btn ptz_size-20"
+  .mb20= button_tag "Button | Disabled", class: "ptz_btn ptz_size-20", disabled: :disabled
+  .mb20
+    xmp.showme.p10.mb20.fs18.lh130
+      erb:
+        .ptz_btn-group
+          button.ptz_btn.ptz_size-20
+          button.ptz_btn.ptz_size-20.current
+          button.ptz_btn.ptz_size-20 disabled='disabled'
+
+    .ptz_btn-group
+      = button_tag "Button 1", class: "ptz_btn ptz_size-20"
+      = button_tag "Button 2", class: "ptz_btn ptz_size-20 current"
+      = button_tag "Button 3", class: "ptz_btn ptz_size-20", disabled: :disabled
+
+  .mb20
+    .ptz_btn-group
+      = button_tag "Button 1", class: "ptz_btn ptz_size-14"
+      = button_tag "Button 2", class: "ptz_btn ptz_size-14 current"
+
+.mb20
+  - (10..19).step(1) do |num|
+    .mb20
+      = link_to "Link As Button | #{ num }", '#', class: "ptz_btn ptz_size-#{num}"
+
+.mb20
+  - (20..25).step(1) do |num|
+    .mb20
+      = link_to "Link As Button | #{ num }", '#', class: "ptz_btn ptz_size-#{num} current"
+
+.mb20
+  - (20..25).step(1) do |num|
+    .mb20
+      = link_to "Link As Button | #{ num }", '#', class: "ptz_btn ptz_size-#{num}", disabled: :disabled
