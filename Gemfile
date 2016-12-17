@@ -28,6 +28,7 @@ gem 'whenever', '0.9.7', require: false
 # CONTENT
 # gem 'protozaur', github: 'the-teacher/protozaur'
 gem 'protozaur', path: '../protozaur'
+gem 'autoprefixer-rails'
 
 gem 'slim-rails', '3.1.1'
 gem 'slim', '3.0.7'

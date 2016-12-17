@@ -1,0 +1,18 @@
+.fs25.mb50 Line Height
+
+.fs16.lh120
+  xmp.showme.p10.mb20
+    erb:
+      .lh120 All work and no play makes Jack a dull boy!
+
+  xmp.showme.p10.mb20
+    erb:
+      <div class="lh120">
+        All work and no play makes Jack a dull boy!
+      </div>
+
+- (10..20).to_a.each do |num|
+  - size = num * 10
+  .mb20.fs16(class="lh#{ size } showme")
+    span.b.mr10= ".lh#{size}"
+    = "All work and no play makes Jack a dull boy! " * 20

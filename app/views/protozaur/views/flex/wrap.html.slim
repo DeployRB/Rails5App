@@ -1,0 +1,17 @@
+.fs25.mb50 Wrap
+
+- %w[ wrap nowrap rwrap ].each do |klass|
+  .mb50
+    xmp.showme.p10.mb20.fs18.lh130
+      erb:
+        .flex-holder.flex-<%= klass %>.w600(style='height:100px')
+          div Item 1
+          div Item 2
+          ...
+          div Item 40
+
+    .showme.fs18
+      .flex-holder.w600.ofh(style='height:100px' class="flex-#{klass}")
+        - 40.times do |i|
+          div.showme.p5(style='width:30px;height:30px')= i.next
+

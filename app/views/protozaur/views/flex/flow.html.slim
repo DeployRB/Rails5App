@@ -1,0 +1,18 @@
+.fs25.mb50 Flex flow
+
+- %w[ row rrow col rcol ].each do |dir|
+  - %w[ nowrap wrap rwrap ].each do |wrap|
+    - klass = "flex-flow_#{dir}_#{wrap}"
+    .mb50
+      xmp.showme.p10.mb20.fs18.lh130
+        erb:
+          .flex-holder.<%= klass %>(style='height:100px')
+            div Item 1
+            div Item 2
+            ...
+            div Item 20
+
+      .showme.fs18
+        .flex-holder.ofh.w600(style='height:100px' class=klass)
+          - 20.times do |i|
+            div.showme.p15 Item&nbsp;#{ i.next }

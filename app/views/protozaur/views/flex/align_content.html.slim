@@ -1,0 +1,19 @@
+.fs25.mb50 Align Content
+
+- %w[ st s e c b a ].each do |klass|
+  - klass = "flex-ac_#{klass}"
+
+  .mb50
+    xmp.showme.p10.mb20.fs18.lh130
+      erb:
+        .flex-holder.flex-flow_row_wrap.<%= klass %>(style='height:300px')
+          div Item 1
+          div Item 2
+          ...
+          div Item 20
+
+    .showme.fs18
+      .flex-holder.ofh.w600.flex-flow_row_wrap(style='height:300px' class=klass)
+        - 20.times do |i|
+          div.showme.p15 Item&nbsp;#{ i.next }
+

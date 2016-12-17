@@ -1,0 +1,15 @@
+.fs25.mb50 Justify content
+
+- %w[ jc_a jc_b jc_c jc_e jc_s ].each do |klass|
+  .mb50
+    xmp.showme.p10.mb20.fs18.lh130
+      erb:
+        .flex-holder.flex-<%= klass %>(style='height:100px')
+          div Item 1
+          div Item 2
+          div Item 3
+
+    .showme.fs18
+      .flex-holder(style='height:100px' class="flex-#{klass}")
+        - 3.times do |i|
+          div.showme.p15 Item&nbsp;#{ i.next }

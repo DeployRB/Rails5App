@@ -1,0 +1,55 @@
+.fs25.mb50 Buttons
+
+.mb50
+  xmp.showme.p10.mb20.fs18.lh130
+    erb:
+      button.ptz_btn.ptz_size-20 Button | Regular
+      button.ptz_btn.current.ptz_size-20 Button | Current
+      button.ptz_btn.ptz_size-20(disabled = :disabled) Button | Disabled
+
+  xmp.showme.p10.mb20.fs18.lh130.w980.ofh.xscroll
+    erb:
+      <button class="ptz_btn ptz_size-20">Button | Regular</button>
+      <button class="ptz_btn current ptz_size-20">Button | Current</button>
+      <button class="ptz_btn ptz_size-20" disabled="disabled">Button | Disabled</button>
+
+  .mb20
+    .iblock.mr20
+      button.ptz_btn.ptz_size-20 Button | Regular
+    .iblock.mr20
+      button.ptz_btn.current.ptz_size-20 Button | Current
+    .iblock.mr20
+      button.ptz_btn.ptz_size-20(disabled = :disabled) Button | Disabled
+
+.mb50
+  xmp.showme.p10.mb20.fs18.lh130
+    erb:
+      .ptz_btn-group
+        button.ptz_btn.ptz_size-20
+        button.ptz_btn.ptz_size-20.current
+        button.ptz_btn.ptz_size-20 disabled='disabled'
+
+  .ptz_btn-group
+    = button_tag "Button 1", class: "ptz_btn ptz_size-20"
+    = button_tag "Button 2", class: "ptz_btn ptz_size-20 current"
+    = button_tag "Button 3", class: "ptz_btn ptz_size-20", disabled: :disabled
+
+.mb50
+  xmp.showme.p10.mb20.fs18.lh130
+    erb:
+      a.ptz_btn.ptz_size-20(href='#') Link As Button
+      a.ptz_btn.ptz_size-20.current(href='#') Link As Button
+      a.ptz_btn.ptz_size-20(href='#' disabled='disabled') Link As Button
+
+  xmp.showme.p10.mb20.fs18.lh130
+    erb:
+      <a href='#' class='ptz_btn ptz_size-20'>Link As Button</a>
+      <a href='#' class='ptz_btn ptz_size-20 current'>Link As Button</a>
+      <a href='#' class='ptz_btn ptz_size-20' disabled='disabled'>Link As Button</a>
+
+  .iblock.mr20
+    a.ptz_btn.ptz_size-20(href='#') Link As Button
+  .iblock.mr20
+    a.ptz_btn.ptz_size-20.current(href = '#') Link As Button
+  .iblock.mr20
+    a.ptz_btn.ptz_size-20(href = '#' disabled = 'disabled') Link As Button

@@ -1,0 +1,25 @@
+.w100p
+  .ptz_btn-group.mb20
+    = render template: "protozaur/header"
+
+.ptz_table.w100p
+  .ptz_td
+
+    ruby:
+      links = {
+        'Font family' => 'font_family',
+        'Line height' => 'line_height',
+        'Font size'   => 'font_size',
+        'Block model' => 'block_model',
+        'Padding'     => 'paddings',
+        'Margins'     => 'margins',
+        'Textareas'   => 'textareas',
+        'Width'       => 'width'
+      }
+
+    - links.each_pair do |k, v|
+      - current = 'current' if v.to_s == @view.to_s
+      .mb20= link_to k, ptz_framework_path(view: v), class: "ptz_btn ptz_size-18 #{current}"
+
+  .ptz_td.pl40.w100p
+    = render template: "protozaur/views/framework/#{@view}"

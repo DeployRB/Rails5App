@@ -1,0 +1,43 @@
+.fs25.mb50 Flex holders
+
+.mb50
+  xmp.showme.p10.mb20.fs18.lh130
+    erb:
+      .flex-holder(style='height:100px')
+        div Hello
+        div World
+
+  .showme.fs18.flex-holder(style='height:100px')
+    div.showme.p15 Hello
+    div.showme.p15 World
+
+.mb50
+  xmp.showme.p10.mb20.fs18.lh130(style='height:100px')
+    erb:
+      .flex-holder(style='height:100px')
+        div(style='order:2') Hello
+        div(style='order:1') World
+
+  .showme.fs18.flex-holder(style='height:100px')
+    div.showme.p15(style='order:2') Hello
+    div.showme.p15(style='order:1') World
+
+.mb50
+  xmp.showme.p10.mb20.fs18.lh130
+    erb:
+      .flex-iholder.p5.mr50(style='height:100px')
+        div Hello
+        div World
+
+      .flex-iholder.p5(style='height:150px')
+        div(style='order:2') Hello
+        div(style='order:1') World
+
+  .showme.fs18
+    .flex-iholder.showme.p5.mr50(style='height:100px')
+      div.showme.p15 Hello
+      div.showme.p15 World
+
+    .flex-iholder.showme.p5(style='height:150px')
+      div.showme.p15(style='order:2') Hello
+      div.showme.p15(style='order:1') World

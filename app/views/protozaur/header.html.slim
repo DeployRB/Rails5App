@@ -1,0 +1,11 @@
+- current = current_page?(controller: :protozaur, action: :index) ? :current : nil
+= link_to 'Index / Base', root_path, class: "ptz_btn ptz_size-18 #{current}"
+
+- current = current_page?(controller: :protozaur, action: :framework) ? :current : nil
+= link_to 'Framework', ptz_framework_path, class: "ptz_btn ptz_size-18 #{current}"
+
+- current = current_page?(controller: :protozaur, action: :inputs_buttons) ? :current : nil
+= link_to 'Inputs / Buttons', ptz_inputs_buttons_path, class: "ptz_btn ptz_size-18 #{current}"
+
+- current = current_page?(controller: :protozaur, action: :flex) ? :current : nil
+= link_to 'Flex', ptz_flex_path, class: "ptz_btn ptz_size-18 #{current}"

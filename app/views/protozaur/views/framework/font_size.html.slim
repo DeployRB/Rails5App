@@ -1,0 +1,18 @@
+.fs25.mb50 Font Size
+
+.fs16.lh120
+  xmp.showme.p10.mb20
+    erb:
+      .fs16 All work and no play makes Jack a dull boy!
+
+  xmp.showme.p10.mb20
+    erb:
+      <div class="fs16">
+        All work and no play makes Jack a dull boy!
+      </div>
+
+- (10..30).to_a.each do |num|
+  - size = num
+  .mb20.lh120.showme(class="fs#{ size }")
+    span.b.mr10= ".fs#{size}"
+    = "All work and no play makes Jack a dull boy! " * 20

@@ -1,10 +1,12 @@
 /*
   *= require ptz/reset
   *= require ptz/base
+  *= require ptz/flex
   *= require ptz/framework
 
   #= require ptz/inputs_buttons/all
 
   *= require layout
   *= require notes
+  #= require app
 */

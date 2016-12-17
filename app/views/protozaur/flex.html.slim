@@ -1,0 +1,24 @@
+.w100p
+  .ptz_btn-group.mb20
+    = render template: "protozaur/header"
+
+.ptz_table.w100p
+  .ptz_td
+
+    ruby:
+      links = {
+        'Holder'      => 'holder',
+        'Direction'   => 'direction',
+        'Justify'     => 'justify',
+        'Wrap'        => 'wrap',
+        'Flow'        => 'flow',
+        'Align items' => 'align_items',
+        'Align content' => 'align_content'
+      }
+
+    - links.each_pair do |k, v|
+      - current = 'current' if v.to_s == @view.to_s
+      .mb20= link_to k, ptz_flex_path(view: v), class: "ptz_btn ptz_size-18 #{current}"
+
+  .ptz_td.pl40.w100p
+    = render template: "protozaur/views/flex/#{@view}"

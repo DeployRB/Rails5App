@@ -1,0 +1,36 @@
+.fs25.mb50 Font Family
+
+.mb50
+  .fs16.lh120
+    xmp.showme.p10.mb20
+      erb:
+        .ffa All work and no play makes Jack a dull boy!
+
+    xmp.showme.p10.mb20
+      erb:
+        <div class="ffa">
+          All work and no play makes Jack a dull boy!
+        </div>
+
+  .mb40
+    ruby:
+      pairs = {
+        'ffa' => 'font-family: Arial',
+        'fft' => 'font-family: Tahoma',
+        'ffv' => 'font-family: Verdana',
+        'ffg' => 'font-family: Georgia',
+        'ffm' => 'font-family: Monospace',
+        'fftnr' => 'font-family: Times New Roman'
+      }
+
+    .ptz_table.fs16
+      .ptz_tr
+        .ptz_th.p10 CSS Class
+        .ptz_th.p10 Style
+        .ptz_th
+      - pairs.each_pair do |klass, value|
+        .ptz_tr
+          .ptz_td.p10(class=klass)= klass
+          .ptz_td.p10(class=klass)= value
+          .ptz_td.p10(class=klass) All work and no play makes Jack a dull boy!
+
