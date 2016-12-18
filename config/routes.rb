@@ -17,7 +17,7 @@ Rails.application.routes.draw do
   get '/protozaur' => 'protozaur#index', as: :protozaur
   get '/ptz/flex' => 'protozaur#flex', as: :ptz_flex
   get '/ptz/framework' => 'protozaur#framework', as: :ptz_framework
-  get '/ptz/inputs_buttons' => 'protozaur#inputs_buttons', as: :ptz_inputs_buttons
+  match '/ptz/inputs_buttons' => 'protozaur#inputs_buttons', as: :ptz_inputs_buttons, via: [:get, :post]
 end
 
 # For details on the DSL available within this file,
