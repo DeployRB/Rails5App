@@ -1,0 +1,35 @@
+.fs25.mb50 File Input
+
+.fs18
+  = form_tag ptz_inputs_buttons_path(view: @view), class: 'showme p20 mb30' do
+    .mb20
+      = text_field_tag :title, '', class: 'ptz_input w500 ptz_size-18', placeholder: 'The Title'
+
+    .mb20
+      = text_field_tag :title2, '', class: 'ptz_input w500 ptz_size-18', placeholder: 'The Title'
+
+    .mb20
+      ruby:
+        id = 'file_1'
+      input.ptz_fileinput.ptz_size-18(type='file' id=id name=id checked=params[:id])
+      label(for=id) Please, choose a file
+
+    .mb20
+      ruby:
+        id = 'file_2'
+      input.ptz_fileinput.ptz_size-25(type='file' id=id name=id checked=params[:id] disabled='disabled')
+      label(for=id) Please, choose a file
+
+    .mb20
+      ruby:
+        id = 'file_3'
+      input.ptz_fileinput(type='file' id=id name=id checked=params[:id] required='required')
+      label(for=id) Please, choose a file
+
+    div
+      = submit_tag 'Submit form', class: 'ptz_btn ptz_size-18', data: { disable_with: false }
+
+.fs18.lh130.p15.showme
+  .w800.ofh
+    pre
+      = params.to_yaml

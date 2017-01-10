@@ -1,0 +1,61 @@
+.fs25.mb50 Radio buttons
+
+.fs18
+  = form_tag ptz_inputs_buttons_path(view: @view), class: 'showme p20 mb30' do
+    .mb20
+      = text_field_tag :title, '', class: 'ptz_input w500 ptz_size-18', placeholder: 'The Title'
+
+    - radio_group_name = :radio_group
+
+    .mb20
+      ruby:
+        id = 'radio_1'
+        checked = params[:radio_group] == id
+      input.ptz_radio_button(type='radio' value=id id=id name=radio_group_name checked=checked)
+
+      label.fs15.lh120(for=id)
+        | Lorem ipsum dolor sit amet,
+        span.b<> consectetur adipiscing elit
+        | ,sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+
+    .mb20
+      ruby:
+        id = 'radio_2'
+        checked = params[:radio_group] == id
+      input.ptz_radio_button(type='radio' value=id id=id name=radio_group_name checked=checked)
+
+      label.fs15.lh120(for=id)
+        | Lorem ipsum dolor sit amet,
+        span.b<> consectetur adipiscing elit
+        | ,sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+
+    .clearfix.mb20
+      .pull-left.w50p.pr10
+        ruby:
+          id = 'radio_3'
+          checked = params[:radio_group] == id
+        input.ptz_radio_button(type='radio' value=id id=id name=radio_group_name checked=checked)
+
+        label.fs15.lh120(for=id)
+          | Lorem ipsum dolor sit amet,
+          span.b<> consectetur adipiscing elit
+          | ,sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+
+      .pull-left.w50p.pl10
+        ruby:
+          id = 'radio_4'
+          checked = params[:radio_group] == id
+        input.ptz_radio_button(type='radio' value=id id=id name=radio_group_name checked=checked disabled='disabled')
+
+        label.fs15.lh120(for=id)
+          | Lorem ipsum dolor sit amet,
+          span.b<> consectetur adipiscing elit
+          | ,sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+
+    div
+      = submit_tag 'Submit form', class: 'ptz_btn ptz_size-18', data: { disable_with: false }
+
+.fs18.lh130.p15.showme
+  .w800.ofh
+    pre
+      = params.to_yaml
