@@ -28,3 +28,4 @@
 config/ENV/*
 
 db/REDIS/*
+db/SPHINX/*
