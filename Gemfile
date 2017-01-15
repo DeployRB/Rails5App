@@ -39,6 +39,7 @@ gem 'kaminari', github: 'amatsuda/kaminari', branch: 'cbcfe341'
 # DATABASES & SEARCH
 gem 'pg', '0.18.4'
 gem 'mysql2', '0.4.4'
+gem 'thinking-sphinx', '3.2.0'
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '~> 5.0.1'
