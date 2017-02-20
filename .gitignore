@@ -26,3 +26,5 @@
 .byebug_history
 
 config/ENV/*
+
+db/REDIS/*
