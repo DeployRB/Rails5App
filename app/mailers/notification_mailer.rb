@@ -1,4 +1,4 @@
-class TestMailer < ActionMailer::Base
+class NotificationMailer < ActionMailer::Base
   layout 'mailer_slim'
 
   before_action :set_attachments!
@@ -15,9 +15,9 @@ class TestMailer < ActionMailer::Base
     end
   end
 
-  # TestMailer.test_letter.deliver_now
-  def test_letter(receiver_email)
-    mail(to: receiver_email, subject: 'Test Mailer Letter')
+  # TestMailer.test_letter('test@test.com').deliver_now
+  def letter(receiver_email)
+    mail(to: receiver_email, subject: 'Notification Mailer Letter')
   end
 
   private

@@ -1,4 +1,5 @@
 .w800.ma.pt20.pb20
   .fs20.ffa.lh130.mb30.b.tac Hey! This is an amazing email template!
   .tac.mb30= image_tag attachments['attached_image.png'].url
+  .fs16.mb30.tac= mail_to "me@domain.com", "My test email", encode: :hex
   .fs16.tac= Time.now.year
