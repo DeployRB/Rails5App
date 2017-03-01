@@ -38,6 +38,10 @@ gem 'ffaker'
 
 gem 'kaminari', github: 'amatsuda/kaminari', branch: 'cbcfe341'
 
+# MAILER
+gem 'premailer-rails'
+gem 'actionview-encoded_mail_to'
+
 # DATABASES & SEARCH
 gem 'pg', '0.18.4'
 gem 'mysql2', '0.4.4'
