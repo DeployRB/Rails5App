@@ -18,6 +18,17 @@ app:
         domain:  'yandex.ru'
         port:    25
 
+      ecommerce:
+        user_name: eshop@example.com
+        password:  YYYYYYYYYYYYYYYYYYYYYYYYYYYYYY
+
+        authentication: plain
+        enable_starttls_auto: true
+
+        address: smtp.gmail.com
+        domain:  gmail.com
+        port:    587
+
     sandmail:
       location:  '/usr/sbin/sendmail'
       arguments: '-i -t'
