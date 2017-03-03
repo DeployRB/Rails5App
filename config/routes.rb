@@ -14,6 +14,7 @@ Rails.application.routes.draw do
   resources  :notes
 
   get '/search' => 'search#search', as: :search
+  get '/analytics' => 'analytics#index', as: :analytics
 end
 
 # For details on the DSL available within this file,
