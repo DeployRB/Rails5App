@@ -1,29 +1,29 @@
-ul.blue_menu
-  li = link_to 'About', '#'
-  li = link_to 'Articles', '#'
-  li = link_to 'Videos', '#'
-  li = link_to 'Open Source', '#'
-  li = link_to 'Contacts', '#'
+ul.main_menu-holder
+  li.main_menu-item = link_to 'About', '#', class: 'main_menu-item_link'
+  li.main_menu-item = link_to 'Articles', '#', class: 'main_menu-item_link'
+  li.main_menu-item = link_to 'Videos', '#', class: 'main_menu-item_link'
+  li.main_menu-item = link_to 'Open Source', '#', class: 'main_menu-item_link'
+  li.main_menu-item = link_to 'Contacts', '#', class: 'main_menu-item_link'
 
-ul.video_list
-  li = link_to 'Getting Started', '#'
-  li = link_to 'Basics. Episode 1', '#'
-  li = link_to 'Basics. Episode 2', '#'
-  li = link_to 'How to contribute', '#'
-  li = link_to 'License', '#'
+ul.video_list-holder
+  li.video_list-item = link_to 'Getting Started', '#', class: 'video_list-item_link'
+  li.video_list-item = link_to 'Basics. Episode 1', '#', class: 'video_list-item_link'
+  li.video_list-item = link_to 'Basics. Episode 2', '#', class: 'video_list-item_link'
+  li.video_list-item = link_to 'How to contribute', '#', class: 'video_list-item_link'
+  li.video_list-item = link_to 'License', '#', class: 'video_list-item_link'
 
-ul.blue_menu
-  li = link_to 'About', '#'
-  li = link_to 'Articles', '#'
-  li
-    div= link_to 'Videos', '#'
+ul.main_menu-holder
+  li.main_menu-item = link_to 'About', '#', class: 'main_menu-item_link'
+  li.main_menu-item = link_to 'Articles', '#', class: 'main_menu-item_link'
+  li.main_menu-item
+    .main_menu-item_link Videos
 
-    ul.video_list
-      li = link_to 'Getting Started', '#'
-      li = link_to 'Basics. Episode 1', '#'
-      li = link_to 'Basics. Episode 2', '#'
-      li = link_to 'How to contribute', '#'
-      li = link_to 'License', '#'
+    ul.video_list-holder
+      li.video_list-item = link_to 'Getting Started', '#', class: 'video_list-item_link'
+      li.video_list-item = link_to 'Basics. Episode 1', '#', class: 'video_list-item_link'
+      li.video_list-item = link_to 'Basics. Episode 2', '#', class: 'video_list-item_link'
+      li.video_list-item = link_to 'How to contribute', '#', class: 'video_list-item_link'
+      li.video_list-item = link_to 'License', '#', class: 'video_list-item_link'
 
-  li = link_to 'Open Source', '#'
-  li = link_to 'Contacts', '#'
+  li.main_menu-item = link_to 'Open Source', '#', class: 'main_menu-item_link'
+  li.main_menu-item = link_to 'Contacts', '#', class: 'main_menu-item_link'
