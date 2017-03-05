@@ -1,3 +1,6 @@
+= link_to 'Our Story', '#', class: :about_info
+= link_to 'User Voice', '#', class: :about_info
+
 ul.main_menu-holder
   li.main_menu-item = link_to 'About', '#', class: 'main_menu-item_link'
   li.main_menu-item = link_to 'Articles', '#', class: 'main_menu-item_link'
@@ -13,7 +16,11 @@ ul.video_list-holder
   li.video_list-item = link_to 'License', '#', class: 'video_list-item_link'
 
 ul.main_menu-holder
-  li.main_menu-item = link_to 'About', '#', class: 'main_menu-item_link'
+  li.main_menu-item
+    = link_to 'About', '#', class: 'main_menu-item_link'
+    = link_to 'Our Story', '#', class: :about_info
+    = link_to 'User Voice', '#', class: :about_info
+
   li.main_menu-item = link_to 'Articles', '#', class: 'main_menu-item_link'
   li.main_menu-item
     .main_menu-item_link Videos

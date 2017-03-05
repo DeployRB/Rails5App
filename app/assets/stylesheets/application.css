@@ -7,6 +7,8 @@
 
   *= require layout
   *= require notes
+
+  *= require analytics/about_links
   *= require analytics/main_menu
   *= require analytics/video_list
 */
